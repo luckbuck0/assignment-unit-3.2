@@ -6,49 +6,70 @@ console.log('---- 1. For loops ----');
 // Example: a for loop to console.log numbers from 0 to 3
 console.log('count from 0 to 3');
 // start i at 0, while i is < 4 do code between {}, afterwards add 1 to i (i++)
-for (let i=0; i<4; i++) {  
-  console.log(i);
-};
+for (let i=0; i<4; i++) 
+{ console.log(i);};
 
 // 1.a. TODO: Write a for loop to console.log the numbers from 0 to 5 
 //   - Which part of the example loop do you need to change to do this?
+// I need to change the condition in which I told the code to run in from
+// until i<4 to until i<6
 console.log('count from 0 to 5')
-for (let i=0; i<6; i++) {console.log(i)};
+for (let i=0; i<6; i++) {
+    console.log(i)
+};
 // 1.b. TODO: Write a for loop to console.log the numbers from 3 to 5
 //   - Which part of the example loop do you need to change to do this?
+// I need to change the starting point in which I said and in this case
+// it would be the variable i.
 console.log('count from 3 to 5');
-for (let i=3; i<6; i++)
-{console.log(i)};
+for (let i=3; i<6; i++) {
+    console.log(i)
+};
 // 1.c. TODO: Write a for loop to console.log EVEN numbers from 2 to 10
 //   - Which part of the example loop do you need to change to do this?
+// I need to change the increments I set at the end to i++ which adds one
+// to i every time the condition is met to i + 2 which will add two.
 console.log('count even numbers from 2 to 10 (2, 4, 6, 8, 10):');
-let max=12
-for (let i=2; i<12; i= i +2)
-{console.log(i)};
+for (let i=2; i<12; i= i +2) {
+    console.log(i)
+};
 
 // 1.d. (STRETCH) TODO: Write a for loop to do a countdown from 5 to 0
 console.log('STRETCH: countdown from 5 to 0');
-for (let i=5; i>-1; i= i=i-1)
-{console.log(i)};
+for (let i=5; i>-1; i= i=i-1){
+    console.log(i)
+};
 
 // 2. For of loops  
 console.log('---- 2. For Of loop ----');
 let stars = ['Polaris', 'Gacrux', 'Formalhaut', 'Rigel', 'Deneb']
 
 // 2.a. TODO: Write a for of loop to console.log each star in the 'stars' array
-for (each of stars) {console.log(each)}
+for (each of stars) {
+    console.log(each)
+}
 
 // 3. While loops  
 console.log('---- 3. While loop ----');
 
 // 3.a. TODO: Write a while loop to console.log each star in the 'stars' array
 console.log('Some stars using while:');
-let i=0;
-while (stars.length>i) {console.log(stars); stars++};
+  let i=0;
+while (stars.length>i) {
+    console.log(stars[i])
+    ;i++ 
+};
 // 3.b. TODO: Write a while loop to console.log the numbers from 0 to 5
 console.log('count from 0 to 5');
-while(i<6){console.log(i); i=i+1};
+let c=0
+while(c<6){
+    console.log(c);
+     c=c+1
+};
 // 3.c. TODO: Write a while loop to console.log the numbers from 10 to 5
 console.log('count backwards from 10 to 5');
 let b=10
-while(b>4) {console.log(b); b=b-1};
+while(b>4) {
+    console.log(b); 
+    b=b-1
+};
